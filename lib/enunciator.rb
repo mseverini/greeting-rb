@@ -6,9 +6,9 @@ class Enunciator
   def enunciate
     return "" if @names.empty?
 
-    greeting = "#{@opening}#{@initial_join} #{@names.first}"
+    greeting = "#{@opening} #{@names.first}"
 
-    @names[1..-2].each do |name|
+    @names[1...-1].each do |name|
       greeting += ", #{name}"
     end
 

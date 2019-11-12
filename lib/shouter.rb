@@ -5,6 +5,5 @@ class Shouter < Enunciator
     @opening = "HELLO"
     @preposition = "AND"
     @punctuation = "!"
-    @initial_join = ""
   end
 end
