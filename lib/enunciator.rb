@@ -8,9 +8,7 @@ class Enunciator
 
     greeting = "#{@opening} #{@names.first}"
 
-    @names[1...-1].each do |name|
-      greeting += ", #{name}"
-    end
+    @names[1...-1].each{ |name| greeting += ", #{name}" }
 
     "#{greeting}#{tail}"
   end
